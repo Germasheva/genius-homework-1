@@ -1,0 +1,347 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-cyrillic_latin-regular.woff2') format('woff2'); 
+}
+@font-face {
+  font-display: swap; 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-v30-cyrillic_latin-500.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap; 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v30-cyrillic_latin-700.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap; 
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/play-v19-cyrillic_latin-regular.woff2') format('woff2'); 
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v19-cyrillic_latin-700.woff2') format('woff2'); 
+}
+
+/* ------------------ BASE ------------------------------- */
+:root {
+  --color-primary-light: #FFFFFF;
+  --color-primary-blue: #2B7FFF;
+  --color-primary-dark-blue: #011C44;
+
+  --color-secondary-dark-grey: #4A4A4A;
+  --color-secondary-light-grey: #747272;
+  --color-secondary-dark-blue: #011F4A;
+  --color-secondary-yellow: #FFD02B;
+
+  --font-primary: Roboto;
+  --font-secondary: Play;
+}
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: none;
+  box-sizing: border-box;
+}
+a {
+	color: inherit;
+  text-decoration: none;
+}
+a:link, 
+a:visited{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+ul,
+ol,
+li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+}
+button {
+	cursor: pointer;
+	color: inherit;
+	background-color: inherit;
+}
+body {
+  line-height: 1;
+  font-family: var(--font-primary);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-primary-dark-blue);
+}
+.wrapper {}
+/* 
+.page {}
+.page__main {}
+.page__about-us {}
+.page__advantages {}
+.page__services {}
+.page__contacts {} 
+*/
+.title {
+  font-family: var(--font-secondary);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.6;
+  color: var(--color-primary-dark-blue);
+  text-align: center;
+}
+.title_left {
+  text-align: left;
+}
+.title .accent {
+  color: var(--color-primary-blue);
+}
+/* ------------------ HEADER ------------------------------- */
+.header {}
+.header__container {}
+.header__logo {
+  font-family: var(--font-secondary);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-primary-blue);
+  text-transform: capitalize;
+}
+.header__menu {}
+.menu {}
+.menu__list {}
+.menu__item {}
+.menu__link {
+  font-size: 18px;
+  line-height: 1.2;
+}
+.menu__link:hover {
+  font-weight: 700;
+  color: var(--color-primary-blue);
+}
+.header__socials {}
+.socials-header {}
+.socials-header__link {}
+
+
+/* ------------------ MAIN PAGE ------------------------------- */
+
+.main-page {}
+.main-page__container {
+  background: url('../images/main/main-background.jpg') right top no-repeat;
+}
+.main-page__subtitle {}
+.main-page__title {
+  font-family: var(--font-secondary);
+  font-size: 140px;
+  font-weight: 700;
+  color: var(--color-primary-blue);
+  text-transform: capitalize;
+}
+.main-page__button {
+  font-weight: 600;
+  line-height: 1.2;
+  padding: 16px 32px;
+  border-radius: 32px;
+  border: 2px solid var(--color-primary-blue);
+  background: transparent;
+}
+.main-page__button:hover,
+.main-page__button:active {
+  background: var(--color-primary-blue);
+  color: #FFF;
+}
+.main-page__text {
+  font-size: 12px;
+  line-height: 1.5;
+}
+/* ------------------ ABOUT US ------------------------------- */
+
+.about-us {}
+.about-us__container {}
+.about-us__content {}
+.about-us__title {}
+.about-us__text {
+  font-size: 22px;
+  line-height: 1.7;
+}
+.about-us__text .accent {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.about-us__media {
+}
+.about-us__photo {
+}
+/* ------------------ ADVANTAGES ------------------------------- */
+
+.advantages {}
+.advantages__container {}
+.advantages__title {}
+.advantages__list {}
+.list-advantages {}
+.list-advantages__item {
+  display: block;
+  text-align: center;
+}
+.list-advantages__icon {}
+.list-advantages__text {
+  color: #000;
+  line-height: 1.3;
+}
+/* ------------------ SERVICES ------------------------------- */
+.services {}
+.services__container {}
+.services__title {}
+.services__slider {}
+.slider {}
+.slider__list {}
+.slider__slide {}
+.slider__item {
+  background-color: #011C44;
+}
+.slider__content {}
+.slider__text {
+  color: #FFF;
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.2;
+}
+.slider__arrows {}
+.slider__arrow {}
+._icon-arrow-left {}
+._icon-arrow-right {}
+.slider__navigation {}
+
+/* ------------------ CONTACTS ------------------------------- */
+
+.contacts {}
+.contacts__container {}
+.contacts__title {}
+.contacts__form {}
+.form-contacts {
+  background-color: var(--color-primary-dark-blue);
+  border-radius: 32px;
+  width: 423px;
+  height: 481px;
+  padding: 48px 57px;
+  text-align: center;
+}
+.form-contacts__title {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #FFF;
+  margin-bottom: 32px;
+}
+.form-contacts__title .accent {
+  color: var(--color-primary-blue);
+}
+.form-contacts__input {
+  border-radius: 32px;
+  border: 2px solid var(--beauty-landing-25, #747272);
+  background: transparent;
+  padding: 18px 33px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+.form-contacts__input::placeholder {
+  font-size: 13px;
+  line-height: 1.2;
+  color: #FFF;
+}
+.form-contacts__button {
+  font-weight: 600;
+  line-height: 1.2;
+  padding: 16px 32px;
+  border-radius: 32px;
+  border: 2px solid var(--color-primary-blue);
+  background: var(--color-primary-blue);
+  color: #FFF;
+  margin-bottom: 8px;
+}
+
+.form-contacts__text {
+  display: inline-block;
+  width: 213px;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--color-secondary-light-grey);
+}
+.form-contacts__text .accent {
+  text-decoration: underline;
+}
+/* ------------------ FOOTER ------------------------------- */
+
+.footer {
+  background-color: var(--color-primary-dark-blue);
+  color: #FFF;
+}
+.footer__container {}
+.footer__logo {
+  font-family: var(--font-secondary);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-primary-blue);
+  text-transform: capitalize;
+}
+.footer__menu {}
+.menu-footer {}
+.menu-footer__list {}
+.menu-footer__link {
+  font-size: 16px;
+  line-height: 1.2;
+}
+.menu-footer__link:hover {
+  font-weight: 700;
+  color: var(--color-primary-blue);
+}
+.footer__address {}
+.address {}
+.address__list {}
+.address__link {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.2;
+}
+.address__link:hover {
+  font-weight: 700;
+  color: var(--color-primary-blue);
+}
+.address__link img {
+  color: #ff6c00;
+
+}
+.footer__copyright {}
+.copyright {}
+.copyright__nda-link {
+  font-size: 16px;
+  line-height: 1.2;
+}
+.copyright__nda-link:hover {
+  font-weight: 700;
+  color: var(--color-primary-blue);
+}
+.copyright__text {
+  color: var(--color-secondary-light-grey);
+  font-size: 13px;
+}
